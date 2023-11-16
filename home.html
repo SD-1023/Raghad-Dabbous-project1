@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home-dark.css">
+    <title>Web Topics</title>
+
+    
+</head>
+<body>
+    <header class="header">
+        <p class="title">Web Topics</p>
+        <div class="header-btn-container">
+            <button class="header-btn" onclick="darkMode()"><ion-icon name="moon-outline" class="header-icon"></ion-icon> Dark Mode</button>
+            <button class="header-btn"><ion-icon name="heart-outline" class="header-icon"></ion-icon>Favourites</button>
+        </div>
+    </header>
+
+    <article >
+        <section >
+            <div class="div1-Welcome-style">
+
+            </div>
+
+            <div class="div2-Welcome-style" >
+
+            </div>
+
+            <div class="welcome-container" >
+                <h1 class="h1-welcome" >Welcome to our website!</h1>
+                <span>We have a new design that's fresh, modern, and easy to use.</span>
+            </div>
+
+        </section>
+        <main id="main">
+            <section class="user-input">
+                <div class="search-dev">
+                    <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                    <input type="search" placeholder="Search the website.." class="search-input" >
+                </div>
+                <div class="select-dev">
+                    <label for="sort" >Sort by:</label>
+                    <select id="sort">
+                        <option value="Default">Default</option>
+                        <option value="opt1">opt1</option>
+                        <option value="opt2">opt2</option>
+                        <option value="opt13">opt3</option>
+                    </select>
+                </div>
+                <div class="select-dev filterBy">
+                    <label for="filter" >Filter by:</label>
+                    <select id="filter">
+                        <option value="Default">Default</option>
+                        <option value="opt1">opt1</option>
+                        <option value="opt2">opt2</option>
+                        <option value="opt13">opt3</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h1>"24" Web Topics Found</h1>
+                </div>
+
+                <div class="items-container">
+
+                </div>
+                <script src="items.js"></script>
+            </section>
+
+        </main>
+    </article>
+
+    <footer id="footer">
+        Developed with  <ion-icon id="heart" name="heart"></ion-icon> © 2023
+    </footer>
+   
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

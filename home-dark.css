@@ -1,0 +1,42 @@
+:root{
+    --bg_default-dark: #1A1A1A;
+    --bg_body-dark :#282828;
+    --lines-color-dark: #000000;
+    --body-text-dark :#EDEDED;
+}
+
+
+.header-btn-Dark{
+    color: var(--body-text-dark);
+    background-color: var(--bg_default-dark);
+    border: 1px solid var(--lines-color-dark);
+}
+
+.dark-mood-background-body{
+    background-color: var(--bg_body-dark);
+}
+
+.select-dev-Dark{
+    border: 0px solid var(--lines-color-dark);
+    background-color: var(--bg_default-dark);
+    border-right-width: 1px;
+    border-left-width: 1px ;
+}
+
+
+img{
+    background-color: var(--bg_default);
+}
+
+.backgroung-color-default-dark{
+    background-color: var(--bg_default-dark);
+}
+
+.border-line{
+    border: 0px solid var(--lines-color-dark);
+}
+
+.txt-color-dark-mode{
+    color: var(--body-text-dark);
+}
+
