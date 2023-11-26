@@ -7,27 +7,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home-dark.css">
+    <link rel="stylesheet" href="dark-mode.css">
     <title>Web Topics</title>
 
     
 </head>
 <body>
     <header class="header">
-        <p class="title">Web Topics</p>
+        <h1 class="title">Web Topics</h1>
         <div class="header-btn-container">
-            <button class="header-btn" onclick="darkMode()"><ion-icon name="moon-outline" class="header-icon"></ion-icon> Dark Mode</button>
-            <button class="header-btn"><ion-icon name="heart-outline" class="header-icon"></ion-icon>Favourites</button>
+            <button class="header-btn" onclick="darkMode('home')"><ion-icon name="moon-outline" class="header-icon"></ion-icon><span class="button-header-text">Dark Mode</span> </button>
+            <button class="header-btn" onclick="showFavourit()"><ion-icon name="heart-outline" class="header-icon"></ion-icon><span class="button-header-text">Favourites</span></button>
         </div>
     </header>
 
-    <article >
+    <section >
         <section >
-            <div class="div1-Welcome-style">
+            <div class="page-top-style1">
 
             </div>
 
-            <div class="div2-Welcome-style" >
+            <div class="page-top-style2" >
 
             </div>
 
@@ -38,12 +38,12 @@
 
         </section>
         <main id="main">
-            <section class="user-input">
-                <div class="search-dev">
+            <section class="maint-top-user-input">
+                <div class="search-container">
                     <ion-icon name="search-outline" class="search-icon"></ion-icon>
                     <input type="search" placeholder="Search the website.." class="search-input" >
                 </div>
-                <div class="select-dev">
+                <div class="select-container sortBy">
                     <label for="sort" >Sort by:</label>
                     <select id="sort">
                         <option value="Default">Default</option>
@@ -52,7 +52,7 @@
                         <option value="opt13">opt3</option>
                     </select>
                 </div>
-                <div class="select-dev filterBy">
+                <div class="select-container filterBy">
                     <label for="filter" >Filter by:</label>
                     <select id="filter">
                         <option value="Default">Default</option>
@@ -63,24 +63,58 @@
                 </div>
             </section>
 
-            <section>
+            <section class="cards-outer-container">
                 <div>
                     <h1>"24" Web Topics Found</h1>
                 </div>
 
-                <div class="items-container">
+                <div class="cards-container">
 
                 </div>
-                <script src="items.js"></script>
+                <script src="cards.js"></script>
             </section>
 
         </main>
-    </article>
+    </section>
 
     <footer id="footer">
         Developed with  <ion-icon id="heart" name="heart"></ion-icon> © 2023
     </footer>
+
+    <section class="favourite-section">
+        <h1 style="font-size: large;">My Favourite Topics</h1>
+        <div class="favourit-cards-container" >
+            <div class="favourit-item" >
+                <img src="images/react.webp" class="card-image">
+                
+                <p class="favourit-topic-language" >React</p>
+
+                <ion-icon  name='star' style='color: goldenrod; padding-left: 10px;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon> 
+            </div>
+            <div class="favourit-item" >
+                <img src="images/cloud.jpeg" class="card-image">
+
+                <p class="favourit-topic-language">Cloud Computing</p>
+                
+                <ion-icon  name='star' style='color: goldenrod; padding-left: 10px;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>     
+            </div>
+            
+        </div>
+        
+    </section>
+
+    
    
+    <script src="dark-mode.js"></script>
+    <script src="favourit.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

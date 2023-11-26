@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <title>Details</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">Web Topics</h1>
+        <div class="header-btn-container">
+            <button class="header-btn" onclick="darkMode('details')"><ion-icon name="moon-outline" class="header-icon"></ion-icon> Dark Mode</button>
+            <button class="header-btn" onclick="showFavourit()"><ion-icon name="heart-outline" class="header-icon"></ion-icon>Favourites</button>
+        </div>
+    </header>
+
+    <section style="height: 100%;">
+        <section >
+            <div class="page-top-style1">
+
+            </div>
+
+            <div class="page-top-style2" >
+
+            </div>
+
+            <div class="welcome-container" >
+                <h1 class="h1-welcome" >Welcome to our website!</h1>
+                <span>We have a new design that's fresh, modern, and easy to use.</span>
+            </div>
+
+        </section>
+        <section>
+            <section class="item-details">
+                <span class="topic" >Web Development Languages </span>
+                <h1 class="web-language" >HTML</h1>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon  name='star' style='color: goldenrod;'></ion-icon>
+                <ion-icon name='star-outline' style='color: goldenrod;'></ion-icon>
+                <br>
+                <p class="item-description" >HTML (HyperText Markup Language) is the standard markup language for creating web pages and other information that can be displayed in a web browser.It provides a structure for content and defines how it should be displayed on a web page,including text, images, and multimedia. HTML is essential for creating static web pages and is a foundational technology for the World Wid Web. </p>
+            </section>
+        </section>
+
+        <main id="main" >
+            <table>
+                <tr>
+                    <th>HTML Sub Topics</th>
+                </tr>
+                <tr>
+                    <td> <ion-icon name="checkmark-circle-outline" style="color: #03C180; padding-right: 13px; font-size: 23px; "></ion-icon>HTML syntax and structure</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="checkmark-circle-outline" style="color: #03C180;  padding-right: 10px; font-size: 23px;"></ion-icon>HTML elements and attributes</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="checkmark-circle-outline" style="color: #03C180;  padding-right: 10px; font-size: 23px;"></ion-icon>HTML forms and input elements</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="checkmark-circle-outline" style="color: #03C180;  padding-right: 10px; font-size: 23px;"></ion-icon>HTML tables and lists</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="checkmark-circle-outline" style="color: #03C180;  padding-right: 10px; font-size: 23px;"></ion-icon>HTML multimedia elements (audio, video, images)</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="checkmark-circle-outline" style="color: #03C180;  padding-right: 10px; font-size: 23px;"></ion-icon>HTML accessibility and semantic markup</td>
+                </tr>
+            </table>
+        </main>
+
+        <div class="box-container" >
+            <img class="box-image" src="images/javascript.jpg">
+            <p id="author" ><span style=" color: #333333; font-weight: 700;">HTML</span> by <a href="#">Sarah Smith</a></p>
+            <div class="interested-container" >
+                <p style="display: contents; color: #333333;">Interested about this topic?</p>
+
+                <button class="add-to-favourit-button" >
+                    Add to Favourites <ion-icon name="heart-outline" style="font-size: 25px; padding-left: 10px;"></ion-icon>
+                </button>
+
+                <span class="bottom-interested-container" >Unlimited Credits</span>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="footer">
+        Developed with  <ion-icon id="heart" name="heart"></ion-icon> © 2023
+    </footer>
+
+    
+    <script src="dark-mode.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

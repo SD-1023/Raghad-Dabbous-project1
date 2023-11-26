@@ -212,7 +212,7 @@ const items =[
     {
         img : "ci-cd.jpeg",
         title : "Web Development Concepts and Techniques",
-        lang : "Continuous Integration/Continuous delivery",
+        lang : "Continuous Integration/Continuous Deployment",
         author : "Madison Davis",
         rate :4
     },
@@ -304,20 +304,22 @@ const items =[
 //                 "Progressive Web Apps (PWA)" , "Web Accessibility Initiative (WAI)" , "Content Management Systems (CMS)" , "Web Analytics"
 //             ];
 
-let itemsContainer = document.getElementsByClassName("items-container");
+let itemsContainer = document.getElementsByClassName("cards-container");
 
 for(let i=0; i< items.length ; i++){
-    itemsContainer[0].innerHTML += `<div class="item">
-                                        <img src="images/${items[i].img}" id="img">
-                                        <div class="desc">
-                                            <div class='item-title' >${items[i].title}</div>
-                                            <h4 >${items[i].lang}</h4>
+    itemsContainer[0].innerHTML += `<a href='details.html' class="card">
+                                        <img src="images/${items[i].img}" class="card-image">
+                                        <div class="card-description">
+
+                                            <p class='item-title' > ${items[i].title} </p>
+                                            <p class='item-language'> ${items[i].lang} </p>
+
                                             <div id ="item${i}-rate" class="rate">
                                             
                                             </div>
-                                            <span>Author: ${items[i].author}</span>
+                                            <span class='item-author'>Author: ${items[i].author}</span>
                                         </div>
-                                    </div>
+                                    </a>
     `
     
     let rate = document.getElementById(`item${i}-rate`);
@@ -334,49 +336,3 @@ for(let i=0; i< items.length ; i++){
     }
 }
 
-function darkMode(){
-    const body = document.body;
-    body.classList.toggle("txt-color-dark-mode");
-    body.classList.toggle("backgroung-color-default-dark");
-
-    const headerBtn = document.getElementsByClassName("header-btn");
-    for(let i=0; i<headerBtn.length ;i++){
-        headerBtn[i].classList.toggle("header-btn-Dark");
-        headerBtn[i].classList.toggle("dark-mood-Line");
-    }
-
-
-    const searchDiv = document.getElementsByClassName("search-dev");
-    searchDiv[0].classList.toggle("backgroung-color-default-dark");
-    searchDiv[0].classList.toggle("border-line");
-
-    const searchInput = document.getElementsByClassName("search-input");
-    searchInput[0].classList.toggle("backgroung-color-default-dark");
-    searchInput[0].classList.toggle("border-line");
-
-    const selectDiv = document.getElementsByClassName("select-dev");
-    for(let i=0; i<selectDiv.length ;i++){
-        selectDiv[i].classList.toggle("select-dev-Dark");
-        // selectDiv[i].classList.toggle("dark-mood-background");
-    }
-    
-    const selectsTag = document.getElementsByTagName("select");
-    for(let i=0; i<selectDiv.length ;i++){
-        selectsTag[i].classList.toggle("backgroung-color-default-dark");
-        selectsTag[i].classList.toggle("txt-color-dark-mode");
-    }
-
-    // const selectSort =document.getElementById("sort");
-    // selectSort.classList.toggle("sort")
-
-    const main = document.getElementById("main");
-    main.classList.toggle("dark-mood-background-body");
-
-    const items = document.getElementsByClassName("item");
-    for(let i=0; i<items.length ; i++){
-        items[i].classList.toggle("backgroung-color-default-dark")
-    }
-
-    const footer = document.getElementById("footer");
-    footer.classList.toggle("dark-mood-background-body");
-}

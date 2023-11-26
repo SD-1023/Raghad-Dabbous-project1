@@ -16,11 +16,19 @@
     background-color: var(--bg_body-dark);
 }
 
-.select-dev-Dark{
+.search-input-text{
+    color: var(--body-text-dark);
+}
+.select-container-Dark{
     border: 0px solid var(--lines-color-dark);
     background-color: var(--bg_default-dark);
     border-right-width: 1px;
     border-left-width: 1px ;
+}
+
+.filterBy-dark{
+    border-left: none;
+    border-right: none;
 }
 
 
@@ -39,4 +47,22 @@ img{
 .txt-color-dark-mode{
     color: var(--body-text-dark);
 }
+
+.td-border{
+    border: solid 1px var(--lines-color-dark);
+    border-style: none solid solid none;
+}
+
+.th-border{
+    border: solid 1px var(--lines-color-dark);
+}
+
+/* td {
+    border: solid 1px var(--lines-color-dark);
+
+}
+
+th {
+    border: solid 1px var(--lines-color-dark);
+} */
 
